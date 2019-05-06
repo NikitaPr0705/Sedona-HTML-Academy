@@ -1,37 +1,37 @@
-body > * {
+html > * {
     outline: 2px solid deeppink;
 }
-body > * > * {
+html > * > * {
     outline: 2px solid lime;
     outline-offset: -2px;
 }
-body > * > * > * {
+html > * > * > * {
     outline: 2px solid dodgerblue;
-    outline-offset: -4px;
+    /* outline-offset: -4px; */
 }
 
-body > * > * > * > * {
+html > * > * > * > * {
     outline: 2px solid yellow;
     outline-offset: -2px;
-    background-color: rgba(255, 0, 60, 0.5)
+   
 }
 
-body > * > * > * > * > * {
+html > * > * > * > * > * {
     outline: 2px solid brown;
     outline-offset: -2px;
 }
 
-body > * > * > * > * > * > * {
+html > * > * > * > * > * > * {
     outline: 2px solid rgb(36, 9, 9);
     outline-offset: -2px;
 }
 
-body > * > * > * > * > * > * > * {
+html > * > * > * > * > * > * > * {
     outline: 2px solid rgb(40, 230, 173);
     outline-offset: -2px;
 }
 
-body > * > * > * > * > * > * > * > * {
+html > * > * > * > * > * > * > * > * {
     outline: 2px solid rgb(122, 40, 230);
     outline-offset: -2px;
 }

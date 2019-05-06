@@ -1,24 +1,24 @@
-@font-face {
+/* @font-face {
   font-weight: 400;
   font-family: "Montserrat";
   font-style: normal;
   src: url("fonts/Montserrat-Regular.woff") format("woff");
-}
+} */
 
-@font-face {
+/* @font-face {
   font-weight: 700;
   font-family: "Montserrat";
   font-style: normal;
   src: url("fonts/Montserrat-Bold.woff") format("woff");
-}
+} */
 
-html,
+/* html,
 body {
   margin: 0;
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
-}
+} */
 
 body {
   min-width: 430px;
@@ -36,7 +36,7 @@ main::before {
 main,
 header,
 footer {
-  background-color: #f3faff;
+  /* background-color: #f3faff; */
   border: 2px solid #7fc1ff;
 }
 
@@ -44,7 +44,7 @@ nav,
 section,
 article,
 aside {
-  background-color: #f9f7ff;
+  /* background-color: #f9f7ff; */
   border: 2px solid #9779ec;
 }
 
@@ -56,8 +56,8 @@ aside::before {
 }
 
 h1 {
-  font-size: 18px;
-  background-color: #ffffff;
+  /* font-size: 18px; */
+  /* background-color: #ffffff; */
   border: 2px solid #ff994f;
 }
 
@@ -67,7 +67,7 @@ h1::before {
 }
 
 p {
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   border: 2px solid #f36dff;
 }
 
@@ -76,18 +76,18 @@ p::before {
   content: "p";
 }
 
-* {
+/* * {
   position: relative;
   padding: 25px 25px 20px;
   margin: 0;
   border-radius: 4px;
-}
+} */
 
-*:not(:last-child) {
+/* *:not(:last-child) {
   margin-bottom: 20px;
-}
+} */
 
-*::before {
+/* *::before {
   position: absolute;
   top: 8px;
   left: 10px;
@@ -95,7 +95,7 @@ p::before {
   font-size: 11px;
   line-height: 10px;
   letter-spacing: 0.04em;
-}
+} */
 
 html::before {
   content: "html";

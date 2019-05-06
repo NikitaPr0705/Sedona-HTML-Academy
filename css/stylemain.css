@@ -25,29 +25,47 @@
         clip: rect(0 0 0 0);
         overflow: hidden;
     }
+html {
+    width: 100%;
+    /* max-width: 1280px; */
+    /* margin: 0 auto; */
+}
 
 .body {
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    height: 100%;
+    max-width: 1280px;
+    margin: 0 auto;    
+    /* height: 100%; */
     font-family: "PT Sans", Arial, sans-serif;
 }
 
 .header {
-    width: 100%;    
+    width: 100%;  
+    background-image: url(//img/sedona-welcome-background-image.png);
+
+    /* max-width: 1200px;   */
+}
+
+.header-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
 }
 
 .header-navigation {
     width: 100%;
     max-width: 1200px;
+    margin: 0 auto;
+    
 }
 
 .navigation-list {
+    width: 100%;
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
     list-style: none;
-    width: 100%;
     /* max-width: 1056px; */
     margin: 0 auto;
     padding: 0;
@@ -63,26 +81,51 @@
 }
 
 .header-background {
-    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-background__image {
+    width: 100%;
+    /* position: relative; */
+    /* max-width: 1200px; */
+    margin: 0 auto;
 }
 
 .header-background__title {
-    position: absolute;
+    width: 100%;
+    max-width: 459px;
+    margin: 0 auto;
+    /* position: absolute; */
     top: 55px;
     left: 370px;
 }
 
 .main {
     width: 100%;
+}
+
+.main-wrapper {
     max-width: 1200px;
+    margin: 0 auto;
 }
 
 .main__title {
+    max-width: 440px;
+    margin: 0 auto;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
     text-align: center;
     text-transform: uppercase;
 }
 
 .main__text {
+    max-width: 495px;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0 auto;
     text-align: center;
     text-transform: uppercase;
 }
@@ -91,24 +134,34 @@
     width: 100%;
     max-width: 1200px;
     display: flex;
+    margin: 0 auto;
 }
 
 .features-wrapper {
     width: 100%;
     max-width: 400px;
     text-align: center;
+    background-color: #81b3d2;
+}
+
+.features-image {
+    width: 100%;
+    /* max-width: 800px; */
 }
 
 
 .features-wrapper__title {
+    color: #ffffff;
     
 }
 
 .features-wrapper__number {
+    color: #ffffff;
 
 }
 
 .features-wrapper__text {
+    color: #ffffff;
 
 }
 
@@ -118,10 +171,16 @@
 }
 
 .benefits-list {
+    width: 100%;
+    max-width: 1200px;
     display: flex;
     list-style: none;
+    padding: 0;
 }
 
+.benefits-list__item {
+    max-width: 400px;
+}
 
 .booking {
     width: 100%;
@@ -143,16 +202,20 @@
 .frame-map {
     width: 100%;
     max-width: 1200px;
-}
+} 
 
-.footer {
+.frame-map__image {
     width: 100%;
     max-width: 1200px;
 }
 
+.footer {
+    width: 100%;
+}
+
 .footer-wrapper {
     width: 100%;
-    max-width: 1056px;
+    max-width: 1200px;
     display: flex;
     margin: 0 auto;
 }
@@ -164,7 +227,6 @@
 .filters {
     width: 100%;
     max-width: 1200px;
-    
 }
 
 
