@@ -1,168 +1,207 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
-    <link href="css/normalize1.css" rel="stylesheet">
-    <link href="css/stylemain.css" rel="stylesheet">
-    <link href="css/outline.css" rel="stylesheet">
-    <title>HTML Academy: Седона</title>
-    <!-- <style>
-      @import url("css/header.css");
-    </style> -->
-  </head>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link
+    href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,latin-ext"
+    rel="stylesheet">
+  <link href="css/normalize1.css" rel="stylesheet">
+  <link href="css/stylemain.css" rel="stylesheet">
+  <link href="css/outline.css" rel="stylesheet">
+  <title>HTML Academy: Седона</title>
+</head>
+
 <body class="body">
-<header class="header">
-  <section class="header-wrapper">
-      <nav class="header-navigation">
-        <ul class="navigation-list">
-          <li class="navigation-list__item">
-            <a class="navigation-list__link" href="#">Информация</a>
-          </li>
-          <li class="navigation-list__item">
-            <a class="navigation-list__link" href="#">Фото и видео</a>
-          </li>
-          <li class="navigation-list__item navigation-list__item-logo">
-              <a class="navigation-list__link" href="#">
-                <!-- <img class="item-header__link--logo" src="img/sedona-logo.png" width="140" height="71" alt="Логотип сайта Седона"> -->
-              </a>
-          </li>
-          <li class="navigation-list__item">
-            <a class="item-header__link" href="#">Карта штата</a>
-          </li>
-          <li class="navigation-list__item">
-            <a class="item-header__link" href="hotels.html">Гостиницы</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- <section class="header-background"> -->
-              <!-- <img class="header-background__image" src="img/sedona-welcome-background.png" width="1200" height="773" alt="Изображение городка Седона"> -->
-              <!-- <img class="header-background__title" src="img/sedona-welcome.png" width="459" height="353" alt="Изображение городка Седона"> -->
-      <!-- </section> -->
+  <section class="body-background">
+    <img class="body-background__image" src="img/sedona-background.png" width="1200" height="773" alt="Изображение городка Седона">
   </section>
-</header>
-<main class="main">
-  <section class="main-wrapper">
-  <h1 class="visually-hidden">О Седоне</h1>
-    <p class="main__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-    <p class="main__text main-text--advantages">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
+  <header class="header">
+    <nav class="header-navigation">
+      <section class="navigation-list">
+        <div class="navigation-list__item">
+          <a class="navigation-list__link" href="#">Информация</a>
+        </div>
+        <div class="navigation-list__item">
+          <a class="navigation-list__link" href="#">Фото и видео</a>
+        </div>
+        <div class="navigation-list__item navigation-list__item-logo">
+          <!-- <a class="navigation-list__link" href="#"> -->
+            <!-- <img class="item-header__link--logo" src="img/sedona-logo.png" width="140" height="71" alt="Логотип сайта Седона"> -->
+          <!-- </a> -->
+        </div>
+        <div class="navigation-list__item">
+          <a class="navigation-list__link" href="#">Карта штата</a>
+        </div>
+        <div class="navigation-list__item">
+          <a class="navigation-list__link" href="hotels.html">Гостиницы</a>
+        </div>
+      </section>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="main-wrapper">
+      <h1 class="visually-hidden">О Седоне</h1>
+      <div class="welcome-wrapper">
+        <img class="background__title" src="img/sedona-welcome.png" width="459" height="353"
+          alt="Изображение городка Седона">
+      </div>
+      <div class="main-text-wrapper">
+        <div class="help-wrapper">
+          <p class="main__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p class="main__text main-text--advantages">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
+        </div>
+      </div>
       <section class="features">
         <div class="features-wrapper">
-          <h3 class="features-wrapper__title">Настоящий городок</h3>
+          <h3 class="features-wrapper__title title-one">Настоящий городок</h3>
           <p class="features-wrapper__text">— №1 —</p>
-          <p class="features-wrapper__text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          <p class="features-wrapper__text  text-one">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
         </div>
-        <img class="features-image flag" src="img/sedona-american-flag.png" width="800" height="256" alt="Изображение американского флага на фоне Седоны">
+        <img class="features-image flag" src="img/sedona-american-flag.png" width="800" height="256"
+          alt="Изображение американского флага на фоне Седоны">
       </section>
       <section class="benefits">
-        <ul class="benefits-list">
-          <li class="benefits-list__item">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="75" height="72" viewBox="0 0 75 72">
-              <image width="75" height="72" xlink:href="data:img/png;base64,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"/>
+        <div class="benefits-list benefits-list__one">
+          <div class="benefits-list__item list-one__item">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="75" height="72"
+              viewBox="0 0 75 72">
+              <image width="75" height="72"
+                xlink:href="data:img/png;base64,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" />
             </svg>
-              <h3 class="benefits-list__title">Жильё</h3>
-              <p class="benefits-list__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-          </li>
-          <li class="benefits-list__item">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="74" height="70" viewBox="0 0 74 70">
-              <image width="74" height="70" xlink:href="data:img/png;base64,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"/>
-              </svg>
-              <h3 class="benefits-list__title">Еда</h3>
-              <p class="benefits-list__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-          </li>
-          <li class="benefits-list__item">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="76" viewBox="0 0 64 76">
-              <image width="64" height="76" xlink:href="data:img/png;base64,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"/>
-              </svg>
-              <h3 class="benefits-list__title">Сувениры</h3>
-              <p class="benefits-list__text">Не только китайского, но и местного производства!</p>
-          </li>
-        </ul>
+            <h3 class="benefits-list__title  benefits__title-one">Жильё</h3>
+            <p class="benefits-list__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          </div>
+          <div class="benefits-list__item list-one__item">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="74" height="70"
+              viewBox="0 0 74 70">
+              <image width="74" height="70"
+                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEoAAABGCAYAAABrEgIKAAAI9klEQVR4nO1ce7BVVRn/AVdAeSSpDOILxUc5uVRuioU0TjaOiUsRFEPTZLLMZAhFpZSZxZKiQG2wyVIpdRgfKIbWSh3fryyFZHLNFBWilo/ygShqSAg4H/62fOy79zl733Muc+859/fP3Xftb71+ez2+9X3fOj2wjeFD7AXgYABfBHAAgH0B7ANgZwA7AOjLFq0F8D6ANwE8B+B5AH8D8AcAy501G7dly7cJUT7ETwM4CcA4AF8C0L/GIt8G8DCARQDucdasqVNTc9GhRPkQjwYwBcBxAFo6qJr/A7gTwDxnzVMdVEf9ifIhSpnjATgAn8sRWwdgGYCnOaVWAngVwLsA/sd2yTQcAGB3Ts39ABwOYASAXjnlSnnOWXNfvftVV6J8iEcCuALAyIzXLwFYzK//lLNmXTvrEAJH8WPIVN4lQ+whABc6a/7SnjqyUBei2Pi5AM5LvdoEIAD4mawpzppNdWn1lnplZB3P6f3l1OsNAGYDmOWsWV9rXTUT5UNsBbCQu5fG7QAuddY8V2sdBdtxCIAfcT3UeBbABGfNP2spvyaifIgTAfwawPYq+RkA33HW/LmWsmto01EArqHqkUB2ya/Vsna1mygf4kwu2AlkeHsAc5w1H+bkGQLgKgBDAVzmrHmgZJ2nAvgegH/I3zy1wIcoutgsABcA6Mlk0bvOc9ZcU7Krm9EuonyIPwEwXSX9VxZWZ82fquRbAOAM/is73GBnzQcF6xzCDSFRM+Y6a6ZXyfNVALcA2FElT3fWzC1Sp0bP4qKfVD4jRZJs8yOqkUTsqZ5l6/9Uiap3Telie1aQ3Qxnzb0ADqP6kWCOD/GbJerdjFJEcejPUklLZLdx1vynYBFXcwoIFjtrXitRfQTwOJ9FtfhVkUzcTGTd+qtK/qUPMb1LVkThqedDPBTAk2rhXkaS3ilToQ9RlMch1KVKndd8iNtRR3vRWfNyybyib8moH86k1QBanTUvFMlfiCgujrKbHcgkWStGlhhJheBDNAB+DEDWrYucNc/XufwDSNYgJj0ho63IBys69WYrkuRsNbbeJBG3UQ8SjXt+vQt31shuOUEljQYwrUjeqkT5EOW8NkUlzXDWLGtXS6tjmJIY3t5CKsFZ8yCAnyqRmT7EodXyFRlRspUmh1A5nV9Z99ZvgV6gr+3Aei4BkGjqO6Q2qExUXKN8iKPVTgOuS0vq3uyt6xSD3jpnzTMdXI8F8Dv+K2fQz3JqZqLaiJqqnm/paJLw8dT4Y0eTxHrksP4I/5UBM7mSfC5RPkRR6E5USZfXrZWdB1pDn+RDzFWAK42o09Xa9Eg9bTudCHJIXs7m9KO5ujRRY9XzjY3GED6efrI2LVBJ5YjyIe5Ks6tALAG/r3srOw8WqZYcQyNkG+SNqFHq+QlnzVuNypKzZiXNNqCr7NAsuTyiPq+exWDf6NCWj9YyRB2snpc2AVFa7RmRJZBH1F7q+e/1bVOnxArVqN2yGphH1GD1LNbLRscr1Yhq472lA3MnlTTFh9joRPVTz1l+wkw3d1o71Q6EZsB2WX3MmnrvNhkxhdBmRDlrNvgQr+qczd0mWN0EfexG14YPcSQDJSrCh9iHMQpV4UMcTmdnEdkjfIhFzNl9fYiZimRRZFo4fYgSUrMmz+VNt9EcAOcDeBTARGdNpr7lQ9ybARsj6HL/YZ7Xg/Vez5BEKfOxHLk+tHt/F8D9YhJy1ryZIyu2998wVmsGXf6ZUTU+xFMAvOWseSj9rg1RNNhFenJnMUZgo3q/Ozv+BZVNHJmnpjtGc+uClEu7TcdI/OWMK0iwIatjinh9HhWF8ZS0t1oRP1Al3w3gTH3Q9yH2pi9gMgPaDkobArKIEpPKGJUko+rrzprXfYjH0Je/UzofPcCXcqT1YgjOxRlyW3XMh7gHO35Ejqy05xvS8BziE3zI+uZxN08Tr/EvhgIt8SHuRVPLYer9fGfNt6sRtR8j43RYoXTsLg51nWcRSdU2nLv5BUerNNlyH0sZA6VjP2fQhib+aRKhw3ZepDXynFRzF7LMvirtLnqiNfGraCE4XqWtZ/1nKYco6A2X2aGPNW0VTmfNChrttFVzN0bTJSSt4YiYQNnlSnZMiqSldF2L9fBseoHBrz41RdI85pVpdatKH5YiSYg/wVkzkYToYLWxKZLExXaIs0ZG47l04IIa+Pkpkq6k53grklDAXTUJwC9SX+xZkrRCyfWnH+60VBGS9wIdr+lDFBPOHakIPSF+krNmcar+c0leb5W8lF/8BSU3kGvR+FT9kvdiHZrI3fd2BtAmkECzs5w1v83jomrsgQ/xIE7FfdmYyc6atTmyScekYWc7axbmyOmOCfHjaWnMkm0lscMYDTMtL1DWhziVnpW1WcQruUGsfyyDTU4uGqxRET7EAVxIi8i2+hA/U1B2HANAqskN8iGmYzPzZEdSJagm10N2Raoa3ehGNzoneqg525/baq0XehoFq/UNix4k6Vu8mjGwGRgogTcYM79YVv5xPDR2IxtyNDuqJRVEJcPt392EbcY+NAzI6WVmi4rNlKPFgXnmkmYDdcHkaDZKn/Ve6yZpC5w14vhNQsP7lL650KzoJqogNFGZjr9mBW3xn5wDW7iIy8F0qA/xB6kQmGbGGGVeeqWFd3wnMmF2s7OTg9t68vJfXe+cNBgkyHdmcoQRQ9b3ARxL0+ge7OumJlJAk5iwpM+reHH8CmfNe1nOhR2V//0dZ02Wx6OhwFCnjZX6nKUevK+e+7OQRocOnMt0jmZ5YdZz2IH+uQ655dTJsL9qTuaFyTyFUwe4ntCo7Chof0DmPZw8orTb5iIfYr8cuS4PH+JgOnYT3FmGqJskWIHP4nWd34hrlQ9R9MibVQznSnq62yCTKNkOGUeQQBTSWyvdPupq4EgSUr6imj4t78ctckcJR5B4VE9WyRKBch0DN15m/EBXQm/+XsJxdO8PUG2/2lmTe2evmku9NwMhcm8dNQjk92XOkfjVdhGFLSNLghkuS8VjNwJW8WcDbqjWlzI/ECFRJ2fyVC0hQRK43tXsWbJUiGdFzm9yn/gmrseVAeAj4K7W6Slu4fcAAAAASUVORK5CYII=" />
+            </svg>
+            <h3 class="benefits-list__title benefits__title-one">Еда</h3>
+            <p class="benefits-list__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </div>
+          <div class="benefits-list__item list-one__item">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="76"
+              viewBox="0 0 64 76">
+              <image width="64" height="76"
+                xlink:href="data:img/png;base64,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" />
+            </svg>
+            <h3 class="benefits-list__title benefits__title-one">Сувениры</h3>
+            <p class="benefits-list__text">Не только китайского, но и местного производства!</p>
+          </div>
+        </div>
       </section>
       <section class="features">
-        <img class="features-image devil" src="img/devil-bridge.png" width="800" height="256" alt="Изображение американского флага на фоне Седоны">
+        <img class="features-image devil" src="img/devil-bridge.png" width="800" height="256"
+          alt="Изображение американского флага на фоне Седоны">
         <div class="features-wrapper">
-          <h3 class="features-wrapper__title">Там есть мост дьявола</h3>
+          <h3 class="features-wrapper__title title-two">Там есть мост дьявола</h3>
           <p class="features-wrapper__number features__text--number">— №2 —</p>
-          <p class="features-wrapper__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          <p class="features-wrapper__text text-two">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div>
       </section>
       <section class="benefits">
-        <ul class="benefits-list">
-          <li class="benefits-list__item">
-            <h3 class="benefits-list__title">Небольшая площадь</h3>
+        <div class="benefits-list benefits-list__two">
+          <div class="benefits-list__item list-two__item">
+            <h3 class="benefits-list__title benefits__title-two">Небольшая площадь</h3>
             <p class="benefits-list__number">— №3 —</p>
             <p class="benefits-list__text">Все достопримечательности находятся очень близко</p>
-          </li>
-          <li class="benefits__item">
-            <h3 class="benefits-list__title">Красивая дорога</h3>
+          </div>
+          <div class="benefits-list__item list-two__item">
+            <h3 class="benefits-list__title benefits__title-two">Красивая дорога</h3>
             <p class="benefits-list__number">— №4 —</p>
             <p class="benefits-list__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </li>
-          <li class="benefits-list__item">
-              <h3 class="benefits-list__title">Мало туристов</h3>
-              <p class="benefits-list__number">— №5 —</p>
-              <p class="benefits-list__text">Большинство едет в гранд каньон и толпится там</p>
-          </li>
-        </ul>
+          </div>
+          <div class="benefits-list__item list-two__item">
+            <h3 class="benefits-list__title benefits__title-two">Мало туристов</h3>
+            <p class="benefits-list__number">— №5 —</p>
+            <p class="benefits-list__text">Большинство едет в гранд каньон и толпится там</p>
+          </div>
+        </div>
       </section>
-    <section class="booking">
-      <p class="booking__text">Заинтересовались?</p>
-      <p class="booking__search">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <div class="order-window">
-        <a class="order-window__link" href="#modal-window">Поиск гостиницы в Седоне</a>
-      </div>
-  </section>
-  <section class="frame-map">
-    <img class="frame-map__image" src="img/sedona-map.png" width="1200" height="593" alt="Карта Седоны">
-  </section>
-</section>
-</main>
-<footer class="footer">
+      <section class="booking">
+        <div class="booking-wrapper">
+        <p class="booking__text">Заинтересовались?</p>
+        <p class="booking__search">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
+          седоне</p>
+        <div class="order-window">
+          <a class="order-window__link" href="#modal-window">Поиск гостиницы в Седоне</a>
+        </div>
+        </div>
+      </section>
+      <section class="frame-map">
+        <img class="frame-map__image" src="img/sedona-map.png" width="1200" height="593" alt="Карта Седоны">
+      </section>
+    </section>
+  </main>
+  <footer class="footer">
     <section class="footer-wrapper">
-    <p class="footer__text text-hashtag">#VISITSEDONA</p>
-        <a class="footer__link footer__link--twitter" href="#" aria-label="Ссылка на социальную сеть Твиттер"><span class="visually-hidden">Твиттер</span>
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15">
-            <image id="t" width="17" height="15" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAPCAYAAAACsSQRAAABHUlEQVQ4jZ2Tr0tEQRSFz/UHgooWtxhELQbBZha2GyzLFgXbGjSb/RNsgkGbGIz+DWqwiBhlF0RFMQhiWPCTu8zAc3d22OeXHvPunHPu3BkBY4ApAzALXABt4As4ASaBCrDiBQ3gFBhOyQDTwCO9NIPo9pCkBUlbktxpKqGzJ2k+sT7nHpLW3Gm34NEC6sBIIclVIkXE0yx70SLw0/XzObS4H86gH43otA7cZApzbLiGn8mSpNXcdDK0YhIf0+s/UnwDo50kZvYmqSrpoWSKazNrx3aciTCyMpz9qfUbC9yWaOUFGO8xBGaAQ+B9AJFacW9sJ37fS+r0meHAzM67ExwDnwO4fwCbfcWBKnAE3IVHFXkCLoEdf7XJzZJ+ATYfBM+BLQjiAAAAAElFTkSuQmCC"/>
-          </svg>
-        </a>
-        <a class="footer__link footer__link--facebook" href="#" aria-label="Ссылка на социальную сеть Фейсбук"><span class="visually-hidden">Фейсбук</span>
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="22" viewBox="0 0 12 22">
-            <image id="fb-icon" width="12" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAWCAYAAAD0OH0aAAAAbklEQVQ4je2RMQqAMAxFX0V3vYFH8Po9lbg4dPBLQUFiiggKDr4tzX9NaPGQNEiKkpIMp/gWnm1wxxNiKZwJjpCAxt0VCCac68VkemAqXYCzRXvsV0WzwG0hyHuqJye8L9RAZ85GU3/9H37hEmAFZHqOnjrsE+cAAAAASUVORK5CYII="/>
-          </svg>
-        </a>
-        <a class="footer__link footer__link--youtube" href="#" aria-label="Ссылка на социальную сеть YouTube"><span class="visually-hidden">YouTube</span>
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16">
-            <image id="youtube" width="20" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAAlElEQVQ4jb2UsQ2DMBBFPyki5CoSQzBPWIBBGCQVLRPAIgyREYIrXmTkSBTIEHTJqyyd/E7+Pp0AB7TAxHmm6HCKByvaLNgl5bLBByFGsoVLolZJGiR91zCR3S3WS+ABvI7kvCtcNS6ABniaCFfiK1AD49alVIbn+PuTLT/lDvTAfET04SeD7Q19Pgg7Q2Fnu77AvQF2jZhtlDlF0QAAAABJRU5ErkJggg=="/>
-          </svg>
-        </a>
-    <div class="footer-developer">
-        <b class="footer-developer__text">Website by</b>
+      <div class="footer-wrapper__help">
+      <p class="footer__text text-hashtag">#VISITSEDONA</p>
+      <div class="footer-links-wrapper">
+        <div class="footer__link-item">
+          <a class="footer__link footer__link--twitter" href="#" aria-label="Ссылка на социальную сеть Твиттер"><span
+              class="visually-hidden">Твиттер</span>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15"
+              viewBox="0 0 17 15">
+              <image id="t" width="17" height="15"
+                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAPCAYAAAACsSQRAAABHUlEQVQ4jZ2Tr0tEQRSFz/UHgooWtxhELQbBZha2GyzLFgXbGjSb/RNsgkGbGIz+DWqwiBhlF0RFMQhiWPCTu8zAc3d22OeXHvPunHPu3BkBY4ApAzALXABt4As4ASaBCrDiBQ3gFBhOyQDTwCO9NIPo9pCkBUlbktxpKqGzJ2k+sT7nHpLW3Gm34NEC6sBIIclVIkXE0yx70SLw0/XzObS4H86gH43otA7cZApzbLiGn8mSpNXcdDK0YhIf0+s/UnwDo50kZvYmqSrpoWSKazNrx3aciTCyMpz9qfUbC9yWaOUFGO8xBGaAQ+B9AJFacW9sJ37fS+r0meHAzM67ExwDnwO4fwCbfcWBKnAE3IVHFXkCLoEdf7XJzZJ+ATYfBM+BLQjiAAAAAElFTkSuQmCC" />
+            </svg>
+          </a>
+        </div>
+        <div class="footer__link-item">
+          <a class="footer__link footer__link--facebook" href="#" aria-label="Ссылка на социальную сеть Фейсбук"><span
+              class="visually-hidden">Фейсбук</span>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="22"
+              viewBox="0 0 12 22">
+              <image id="fb-icon" width="12" height="22"
+                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAWCAYAAAD0OH0aAAAAbklEQVQ4je2RMQqAMAxFX0V3vYFH8Po9lbg4dPBLQUFiiggKDr4tzX9NaPGQNEiKkpIMp/gWnm1wxxNiKZwJjpCAxt0VCCac68VkemAqXYCzRXvsV0WzwG0hyHuqJye8L9RAZ85GU3/9H37hEmAFZHqOnjrsE+cAAAAASUVORK5CYII=" />
+            </svg>
+          </a>
+        </div>
+        <div class="footer__link-item">
+          <a class="footer__link footer__link--youtube" href="#" aria-label="Ссылка на социальную сеть YouTube"><span
+              class="visually-hidden">YouTube</span>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16"
+              viewBox="0 0 20 16">
+              <image id="youtube" width="20" height="16"
+                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAAlElEQVQ4jb2UsQ2DMBBFPyki5CoSQzBPWIBBGCQVLRPAIgyREYIrXmTkSBTIEHTJqyyd/E7+Pp0AB7TAxHmm6HCKByvaLNgl5bLBByFGsoVLolZJGiR91zCR3S3WS+ABvI7kvCtcNS6ABniaCFfiK1AD49alVIbn+PuTLT/lDvTAfET04SeD7Q19Pgg7Q2Fnu77AvQF2jZhtlDlF0QAAAABJRU5ErkJggg==" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-developer">
+        <p class="footer-developer__text">Website by</p>
         <a class="footer-developer__link" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img class="footer-developer__logo" src="img/html-academy-logo.png" width="115" height="41" alt="Лого HTML Академии">
+          <img class="footer-developer__logo" src="img/html-academy-logo.png" width="115" height="41"
+            alt="Лого HTML Академии">
         </a>
-    </div>
-</footer>
-<div class="modal visually-hidden" id="modal-window">
+      </div>
+      </div>
+    </section>
+  </footer>
+  <div class="modal visually-hidden" id="modal-window">
     <div class="modal__order">
       <form class="modal__form form-modal" action="https://echo.htmlacademy.ru" method="get">
-      <div class="form-modal__arrival">
-        <label>
-        <input type="date" name="arrival-date-name" placeholder="24 апреля 2017 года">
-      </label>
-      </div>
-      <div class="modal-form__departure">
-        <label for="departure-date-field"></label>
-        <input type="date" name="departure-date-name" id="departure-date-field" placeholder="4 июля 2017 года">
-      </div>
-      <div class="modal-form__adults"></div>
-      <div class="modal-form__children"></div>
-      <button class="button button-form" type="submit">Найти</button>
+        <div class="form-modal__arrival">
+          <label>
+            <input type="date" name="arrival-date-name" placeholder="24 апреля 2017 года">
+          </label>
+        </div>
+        <div class="modal-form__departure">
+          <label for="departure-date-field"></label>
+          <input type="date" name="departure-date-name" id="departure-date-field" placeholder="4 июля 2017 года">
+        </div>
+        <div class="modal-form__adults"></div>
+        <div class="modal-form__children"></div>
+        <button class="button button-form" type="submit">Найти</button>
       </form>
     </div>
   </div>
-  </body>
+</body>
+
 </html>

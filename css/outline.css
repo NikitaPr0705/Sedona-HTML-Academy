@@ -1,10 +1,16 @@
+html {
+    outline: 2px solid blue;
+}
+
 html > * {
     outline: 2px solid deeppink;
 }
+
 html > * > * {
     outline: 2px solid lime;
     outline-offset: -2px;
 }
+
 html > * > * > * {
     outline: 2px solid dodgerblue;
     /* outline-offset: -4px; */
@@ -13,7 +19,6 @@ html > * > * > * {
 html > * > * > * > * {
     outline: 2px solid yellow;
     outline-offset: -2px;
-   
 }
 
 html > * > * > * > * > * {
@@ -33,5 +38,15 @@ html > * > * > * > * > * > * > * {
 
 html > * > * > * > * > * > * > * > * {
     outline: 2px solid rgb(122, 40, 230);
+    outline-offset: -2px;
+}
+
+html > * > * > * > * > * > * > * > * > * {
+    outline: 2px solid rgb(88, 77, 45);
+    outline-offset: -2px;
+}
+
+html > * > * > * > * > * > * > * > * > * > * {
+    outline: 2px solid rgb(40, 230, 65);
     outline-offset: -2px;
 }
