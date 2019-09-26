@@ -9,89 +9,103 @@
   <link
     href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,latin-ext"
     rel="stylesheet">
-  <link href="css/normalize1.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/stylemain.css" rel="stylesheet">
-  <!-- <link href="css/outline.css" rel="stylesheet"> -->
+  <!-- <link href="css/outlines.css" rel="stylesheet"> -->
   <title>Гостиницы Седоны</title>
 </head>
 
-<body class="body hotels">
-  <section class="body-background">
-    <img class="body-background__image" src="img/sedona-background-blurred.png" width="1200" height="562"
-      alt="Размыток изображение городка Седона">
-  </section>
-  <header class="header">
-    <nav class="header-navigation">
-      <section class="navigation-list">
-        <div class="navigation-list__item">
-          <a class="navigation-list__link" href="#">Информация</a>
-        </div>
-        <div class="navigation-list__item">
-          <a class="navigation-list__link" href="#">Фото и видео</a>
-        </div>
-        <div class="navigation-list__item navigation-list__item-logo">
-          <a class="navigation-list__link" href="#">
-            <!-- <img class="item-header__link--logo" src="img/sedona-logo.png" width="140" height="71" alt="Логотип сайта Седона"> -->
-          </a>
-        </div>
-        <div class="navigation-list__item">
-          <a class="navigation-list__link" href="#">Карта штата</a>
-        </div>
-        <div class="navigation-list__item">
-          <a class="navigation-list__link" href="hotels.html">Гостиницы</a>
-        </div>
-      </section>
+<body>
+  <div class="shadow-wrapper">
+ <header class="header hotels-header">
+    <nav class="header-navigation page-header__navigation">
+      <ul class="header-list header-navigation__list">
+        <li class="header__item header-navigation__item">
+          <a class="header__link header-navigation__link" href="index.html">Информация</a>
+        </li>
+        <li class="header__item header-navigation__item">
+          <a class="header__link header-navigation__link" href="#">Фото и видео</a>
+        </li>
+        <li class="header__item header-navigation__item">
+          <a class="header__link header-navigation__link header-navigation__link--logo" href="#"></a>
+        </li>
+        <li class="header__item header-navigation__item">
+          <a class="header__link header-navigation__link" href="#">Карта штата</a>
+        </li>
+        <li class="header__item header-navigation__item">
+          <a class="header__link header-navigation__link header-navigation__link--visited" href="hotels.html">Гостиницы</a>
+        </li>
+      </ul>
     </nav>
   </header>
-  <main class="main main-store">
-    <section class="filters">
+  <main class="hotels-main">
+    <section class="filters hotels-filters hotels-section-one">
       <h1 class="visually-hidden">Гостиницы Седоны</h1>
       <h2 class="visually-hidden">Фильтры</h2>
-      <div class="filters-form">
-      <form class="form hotels-form" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset class="form-fieldset">
-          <legend class="form-legend">Инфраструктура:</legend>
-          <ul class="filters-form__list">
-            <li class="form-list__item">
-              <label>
-                <input type="checkbox" name="pool" value="pool" aria-label="Бассейн" checked>Бассейн</label>
+      <div class="filters__wrapper">
+      <form class="form hotels__form" method="get" action="https://echo.htmlacademy.ru">
+        <div class="fieldset__wrapper infr-and-house__wrapper">
+        <fieldset class="form__fieldset infr-fieldset">
+          <legend class="form__legend">Инфраструктура:</legend>
+          <ul class="form__list filters__list">
+            <li class="form__item filters__item">
+                <input class="form__input" type="checkbox" name="pool" value="pool" aria-label="Бассейн" id="pool" checked>
+                <label class="form__label filters__label" for="pool">Бассейн</label>
             </li>
-            <li class="form-list__item">
-              <label>
-                <input type="checkbox" name="parking" value="parking" aria-label="Парковка">Парковка</label>
+            <li class="form__item filters__item">
+                <input class="form__input" type="checkbox" name="parking" value="parking" aria-label="Парковка" id="parking">
+                <label class="form__label filters__label" for="parking">Парковка</label>
             </li>
-            <li class="form-list__item">
-              <label>
-                <input type="checkbox" name="wifi" value="wifi" aria-label="Wi-Fi">Wi-Fi</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="form-fieldset">
-          <legend class="form-legend">Тип жилья:</legend>
-          <ul class="filters-form__list">
-            <li class="form-list__item">
-              <label>
-                <input type="checkbox" name="hotel" value="hotel" aria-label="Гостиница" checked>Гостиница</label>
-            </li>
-            <li class="form-list__item">
-              <label>
-                <input type="checkbox" name="motel" value="motel" aria-label="Мотель" checked>Мотель</label>
-            </li>
-            <li class="form-list__item">
-              <label>
-                <input type="checkbox" name="pool" value="apartments" aria-label="Апартаменты"
-                  checked>Апартаменты</label>
+            <li class="form__item filters__item">
+                <input class="form__input" type="checkbox" name="wifi" value="wifi" aria-label="Wi-Fi" id="wifi">
+                  <label class="form__label filters__label" for="wifi">Wi-Fi</label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form-fieldset">
-          <legend class="form-legend">Стоимость в сутки</legend>
-          <div class="range-filter">
-            <div class="range-controls">
-              <div class="price-controls">
-                <label class="min-price">от <input name="min-price" type="text" value="0"
+        <fieldset class="form__fieldset house-fieldset">
+          <legend class="form__legend">Тип жилья:</legend>
+          <ul class="form__list filters__list">
+            <li class="form__item filters__item">
+                <input class="form__input" type="checkbox" name="hotel" value="hotel" aria-label="Гостиница" id="hotel" checked>
+                <label class="form__label" for="hotel">Гостиница</label>
+            </li>
+            <li class="form__item filters__item">
+                <input class="form__input" type="checkbox" name="motel" value="motel" aria-label="Мотель" id="motel" checked>
+                <label class="form__label" for="motel">Мотель</label>
+            </li>
+            <li class="form__item filters__item">
+                <input class="form__input" type="checkbox" name="pool" value="apartments" aria-label="Апартаменты" id="apartments" checked>
+                  <label class="form__label" for="apartments">Апартаменты</label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+      <div class="filter-range">
+        <div class="filter-range-title">Стоимость в сутки (р):</div>
+        <div class="price-controls">
+          <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+          <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+        </div>
+        <div class="range-controls">
+          <div class="scale">
+            <div class="bar"></div>
+          </div>
+          <div class="range-toggle range-toggle-min"></div>
+          <div class="range-toggle range-toggle-max"></div>
+        </div>
+        <button class="btn-transparent" type="submit">Показать</button>
+      </div>
+
+      
+      <!-- <div class="fieldset__wrapper cost-and-btn__wrapper">
+        <fieldset class="form__fieldset cost-fieldset">
+          <legend class="form__legend form__legend--indent">Стоимость в сутки(Р):</legend>
+          <div class="filter-range">
+            <div class="range-controls range-controls--indent">
+              <div class="price-controls price-controls--indent">
+                <label class="min-price__label">от <input class="min-price__input" name="min-price" type="text" value="0"
                     aria-label="Минимальная стоимость"></label>
-                <label class="max-price">до <input name="max-price" type="text" value="15000"
+                <label class="max-price__label">до <input class="max-price__input" name="max-price" type="text" value="15000"
                     aria-label="Максимальная стоимость"></label>
               </div>
               <div class="toggle toggle-min" aria-label="Фильтр стоимости"></div>
@@ -99,168 +113,159 @@
               <div class="scale">
                 <div class="bar"></div>
               </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
             </div>
           </div>
         </fieldset>
-        <button class="button" type="submit" class="button filter-button">Показать</button>
+        <button class="button form__button" type="submit" class="button filter-button">Показать</button>
+      </div> -->
+
+
+
       </form>
       </div>
     </section>
-    <section class="store">
-      <div class="sort-wrapper">
-        <p class="sort-wrapper__found">Найдено: 3</p>
-        <div class="inside-wrapper">
-          <div class="type-wrapper">
-            <p class="sort-wrapper__sort">Сортировка:</p>
-            <div class="sort-list sort-types">
-              <div class="sort-list__item"><a class="sort-list__link" href="#">По цене</a></div>
-              <div class="sort-list__item"><a class="sort-list__link" href="#">По типу</a></div>
-              <div class="sort-list__item"><a class="sort-list__link" href="#">По рейтингу</a></div>
+    <section class="hotels hotels-section-two">
+      <aside class="sort-types sort hotels-sort-block">
+
+        <span class="sort-types__text sort__found sort__indent">Найдено: 3</span>
+
+          <div class="sort-types__wrapper sort__wrapper">
+            <span class="sort-types__text sort__text">Сортировка:</span>
+            <ul class="sort-types__list sort__list">
+              <li class="sort-types__item">
+                <a class="sort-types__link" href="#">По цене</a>
+              </li>
+              <li class="sort-types__item">
+                <a class="sort-types__link" href="#">По типу</a>
+              </li>
+              <li class="sort-types__item">
+                <a class="sort-types__link" href="#">По рейтингу</a>
+              </li>
+            </ul>
+             </div>
+
+          <div class="up-down-wrapper">
+            <a class="up__link" href="#"><img src="img/icon-up-dir.png" width="11" height="10" alt=""></a>
+            <a class="down__link" href="#"><img src="img/icon-down-dir.png" width="11" height="10" alt=""></a>
+          </div>
+
+
+    </aside>
+      <section class="booking-hotels hotels-section-three">
+        <ul class="booking-hotels__list hotels-section-three__list">
+          <li class="booking-hotels__item">
+            <div class="booking-hotels__wrapper">
+            <img class="booking-hotels__image" src="img/amara-hotel.png" width="135" height="90" alt="Amara Resort & Spa">
             </div>
-          </div>
-          <div class="sort-list sort-icons">
-            <div><a href="#"><img src="img/icon-up-dir.png" width="11" height="10" alt=""></a></div>
-            <div><a href="#"><img src="img/icon-down-dir.png" width="11" height="10" alt=""></a></div>
-          </div>
-        </div>
-      </div>
-      <section class="hotels">
-        <div class="hotels-list">
-          <div class="hotels-list__item">
-            <div class="hotel-image__wrapper">
-            <img class="hotels-list__image" src="img/amara-hotel.png" width="135" height="90" alt="Amara Resort & Spa">
+            <aside class="booking-hotels__info">
+              <div class="item-wrapper">
+                <a href="#" class="booking-hotels__title booking-hotels__title--indent">Amara Resort & Spa</a>
+                <div class="description-wrapper">
+                  <p class="booking-hotels__type-of-hotel">Гостиница</p>
+                  <p class="booking-hotels__price">От 4000 р.</p>
+                </div>
+                <div class="buttons-wrapper">
+                  <button class="booking-hotels__button booking-hotels__button--about">Подробнее</button>
+                  <button class="booking-hotels__button booking-hotels__button--order">Забронировать</button>
+                </div>
+              </div>
+              <div class="rating-wrapper">
+                <div class="clip-star clip-star--indent"></div>
+                <div class="clip-star clip-star--indent"></div>
+                <div class="clip-star clip-star--indent"></div>
+                <div class="clip-star clip-star--indent"></div>
+                <p class="booking-hotels__rate">Рейтинг: 8,5</p>
+              </div>
+            </aside>
+          </li>
+
+          <li class="booking-hotels__item">
+            <div class="booking-hotels__wrapper">
+            <img class="booking-hotels__image" src="img/desert-quail-hotel.png" width="135" height="90" alt="Desert Quail Inn">
             </div>
-            <section class="item-description">
+            <aside class="booking-hotels__info">
               <div class="item-wrapper">
-                <p class="item-description__title">Amara Resort & Spa</p>
+                <a href="#" class="booking-hotels__title booking-hotels__title--indent">Desert Quail Inn</a>
                 <div class="description-wrapper">
-                  <p class="item-description__text">Гостиница</p>
-                  <p class="item-description__price">От 4000 р.</p>
+                  <p class="booking-hotels__type-of-hotel">Мотель</p>
+                  <p class="booking-hotels__price">От 3000 р.</p>
                 </div>
                 <div class="buttons-wrapper">
-                  <button class="button about-button">Подробнее</button>
-                  <button class="button order-button">Забронировать</button>
+                  <button class="booking-hotels__button booking-hotels__button--about">Подробнее</button>
+                  <button class="booking-hotels__button booking-hotels__button--order">Забронировать</button>
                 </div>
               </div>
               <div class="rating-wrapper">
-                <img class="item-rating__image" src="img/star.png" width="18" height="17" alt="">
-                <p class="item-rating__rate">Рейтинг: 8,5</p>
+                <div class="clip-star clip-star--indent"></div>
+                <div class="clip-star clip-star--indent"></div>
+                <div class="clip-star clip-star--indent"></div>
+                <p class="booking-hotels__rate">Рейтинг: 8,9</p>
               </div>
-            </section>
-          </div>
-          <div class="hotels-list__item">
-            <img class="hotels-list__image" src="img/desert-quail-hotel.png" width="135" height="90"
-              alt="Desert Quail Inn">
-            <section class="item-description">
+            </aside>
+          </li>
+
+          <li class="booking-hotels__item booking-hotels__item--border-bottom">
+            <div class="booking-hotels__wrapper">
+            <img class="booking-hotels__image" src="img/paco-diablo-hotel.png" width="135" height="90" alt="Villas at Poco Diablo">
+            </div>
+            <aside class="booking-hotels__info">
               <div class="item-wrapper">
-                <p class="item-description__title">Desert Quail Inn</p>
+                <a href="#" class="booking-hotels__title booking-hotels__title--indent">Villas at Poco Diablo</a>
                 <div class="description-wrapper">
-                  <p class="item-description__text">Гостиница</p>
-                  <p class="item-description__price">От 4000 р.</p>
+                  <p class="booking-hotels__type-of-hotel">Апартаменты</p>
+                  <p class="booking-hotels__price">От 2000 р.</p>
                 </div>
                 <div class="buttons-wrapper">
-                    <button class="button about-button">Подробнее</button>
-                    <button class="button order-button">Забронировать</button>
+                  <button class="booking-hotels__button booking-hotels__button--about">Подробнее</button>
+                  <button class="booking-hotels__button booking-hotels__button--order">Забронировать</button>
                 </div>
               </div>
               <div class="rating-wrapper">
-                <img class="item-rating__image" src="img/star.png" width="18" height="17" alt="">
-                <p class="item-rating__rate">Рейтинг: 8,5</p>
+                <div class="clip-star clip-star--indent"></div>
+                <div class="clip-star clip-star--indent"></div>
+                <p class="booking-hotels__rate">Рейтинг: 9,2</p>
               </div>
-            </section>
-          </div>
-          <div class="hotels-list__item">
-            <img class="hotels-list__image" src="img/paco-diablo-hotel.png" width="135" height="90"
-              alt="Villas at Poco Diablo">
-            <section class="item-description">
-              <div class="item-wrapper">
-                <p class="item-description__title">Villas at Poco Diablo</p>
-                <div class="description-wrapper">
-                  <p class="item-description__text">Гостиница</p>
-                  <p class="item-description__price">От 4000 р.</p>
-                </div>
-                <div class="buttons-wrapper">
-                    <button class="button about-button">Подробнее</button>
-                    <button class="button order-button">Забронировать</button>
-                </div>
-              </div>
-              <div class="rating-wrapper">
-                <img class="item-rating__image" src="img/star.png" width="18" height="17" alt="">
-                <p class="item-rating__rate">Рейтинг: 8,5</p>
-              </div>
-            </section>
-          </div>
-        </div>
+            </aside>
+          </li>
+        </ul>
       </section>
     </section>
   </main>
 
-  <footer class="footer">
-      <section class="footer-wrapper">
-        <div class="footer-wrapper__help">
-        <p class="footer__text text-hashtag">#VISITSEDONA</p>
-        <div class="footer-links-wrapper">
-          <div class="footer__link-item">
-            <a class="footer__link footer__link--twitter" href="#" aria-label="Ссылка на социальную сеть Твиттер"><span
-                class="visually-hidden">Твиттер</span>
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15"
-                viewBox="0 0 17 15">
-                <image id="t" width="17" height="15"
-                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAPCAYAAAACsSQRAAABHUlEQVQ4jZ2Tr0tEQRSFz/UHgooWtxhELQbBZha2GyzLFgXbGjSb/RNsgkGbGIz+DWqwiBhlF0RFMQhiWPCTu8zAc3d22OeXHvPunHPu3BkBY4ApAzALXABt4As4ASaBCrDiBQ3gFBhOyQDTwCO9NIPo9pCkBUlbktxpKqGzJ2k+sT7nHpLW3Gm34NEC6sBIIclVIkXE0yx70SLw0/XzObS4H86gH43otA7cZApzbLiGn8mSpNXcdDK0YhIf0+s/UnwDo50kZvYmqSrpoWSKazNrx3aciTCyMpz9qfUbC9yWaOUFGO8xBGaAQ+B9AJFacW9sJ37fS+r0meHAzM67ExwDnwO4fwCbfcWBKnAE3IVHFXkCLoEdf7XJzZJ+ATYfBM+BLQjiAAAAAElFTkSuQmCC" />
-              </svg>
-            </a>
-          </div>
-          <div class="footer__link-item">
-            <a class="footer__link footer__link--facebook" href="#" aria-label="Ссылка на социальную сеть Фейсбук"><span
-                class="visually-hidden">Фейсбук</span>
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="22"
-                viewBox="0 0 12 22">
-                <image id="fb-icon" width="12" height="22"
-                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAWCAYAAAD0OH0aAAAAbklEQVQ4je2RMQqAMAxFX0V3vYFH8Po9lbg4dPBLQUFiiggKDr4tzX9NaPGQNEiKkpIMp/gWnm1wxxNiKZwJjpCAxt0VCCac68VkemAqXYCzRXvsV0WzwG0hyHuqJye8L9RAZ85GU3/9H37hEmAFZHqOnjrsE+cAAAAASUVORK5CYII=" />
-              </svg>
-            </a>
-          </div>
-          <div class="footer__link-item">
-            <a class="footer__link footer__link--youtube" href="#" aria-label="Ссылка на социальную сеть YouTube"><span
-                class="visually-hidden">YouTube</span>
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16"
-                viewBox="0 0 20 16">
-                <image id="youtube" width="20" height="16"
-                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAAlElEQVQ4jb2UsQ2DMBBFPyki5CoSQzBPWIBBGCQVLRPAIgyREYIrXmTkSBTIEHTJqyyd/E7+Pp0AB7TAxHmm6HCKByvaLNgl5bLBByFGsoVLolZJGiR91zCR3S3WS+ABvI7kvCtcNS6ABniaCFfiK1AD49alVIbn+PuTLT/lDvTAfET04SeD7Q19Pgg7Q2Fnu77AvQF2jZhtlDlF0QAAAABJRU5ErkJggg==" />
-              </svg>
-            </a>
-          </div>
-        </div>
-        <div class="footer-developer">
-          <p class="footer-developer__text">Website by</p>
-          <a class="footer-developer__link" href="https://htmlacademy.ru/intensive/htmlcss">
-            <img class="footer-developer__logo" src="img/html-academy-logo.png" width="115" height="41"
-              alt="Лого HTML Академии">
-          </a>
-        </div>
-        </div>
-      </section>
-    </footer>
-
-
-  <div class="modal visually-hidden" id="modal-window">
-    <div class="modal__order">
-      <form class="modal__form form-modal" action="https://echo.htmlacademy.ru" method="get">
-        <div class="form-modal__arrival">
-          <label>
-            <input type="date" name="arrival-date-name" placeholder="24 апреля 2017 года">
-          </label>
-        </div>
-        <div class="modal-form__departure">
-          <label for="departure-date-field"></label>
-          <input type="date" name="departure-date-name" id="departure-date-field" placeholder="4 июля 2017 года">
-        </div>
-        <div class="modal-form__adults"></div>
-        <div class="modal-form__children"></div>
-        <button class="button button-form" type="submit">Найти</button>
-      </form>
-    </div>
-  </div>
+ <footer class="footer">
+      <div class="footer-wrapper">
+        <div class="footer-hashtag-wrapper">
+        <p class="footer__hashtag">#VISITSEDONA</p>
+      </div>
+          <nav class="social-navigation footer-navigation">
+            <ul class="social-navigation__list">
+             <li class="social-navigation__item twitter">
+               <a class="social-navigation__link footer__link--twitter" href="#" aria-label="Ссылка на социальную сеть Твиттер" title="Твиттер"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15">
+  <image id="t" width="17" height="15" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAPCAYAAAACsSQRAAABHUlEQVQ4jZ2Tr0tEQRSFz/UHgooWtxhELQbBZha2GyzLFgXbGjSb/RNsgkGbGIz+DWqwiBhlF0RFMQhiWPCTu8zAc3d22OeXHvPunHPu3BkBY4ApAzALXABt4As4ASaBCrDiBQ3gFBhOyQDTwCO9NIPo9pCkBUlbktxpKqGzJ2k+sT7nHpLW3Gm34NEC6sBIIclVIkXE0yx70SLw0/XzObS4H86gH43otA7cZApzbLiGn8mSpNXcdDK0YhIf0+s/UnwDo50kZvYmqSrpoWSKazNrx3aciTCyMpz9qfUbC9yWaOUFGO8xBGaAQ+B9AJFacW9sJ37fS+r0meHAzM67ExwDnwO4fwCbfcWBKnAE3IVHFXkCLoEdf7XJzZJ+ATYfBM+BLQjiAAAAAElFTkSuQmCC"/>
+</svg></a>
+               </li>
+        <li class="social-navigation__item facebook">
+          <a class="social-navigation__link footer__link--facebook" href="#" aria-label="Ссылка на социальную сеть Фейсбук" title="Фейсбук"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="22" viewBox="0 0 12 22">
+  <image id="fb-icon" width="12" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAWCAYAAAD0OH0aAAAAbklEQVQ4je2RMQqAMAxFX0V3vYFH8Po9lbg4dPBLQUFiiggKDr4tzX9NaPGQNEiKkpIMp/gWnm1wxxNiKZwJjpCAxt0VCCac68VkemAqXYCzRXvsV0WzwG0hyHuqJye8L9RAZ85GU3/9H37hEmAFZHqOnjrsE+cAAAAASUVORK5CYII="/>
+</svg></a>
+        </li>
+        <li class="social-navigation__item youtube">
+          <a class="social-navigation__link footer__link--youtube" href="#" aria-label="Ссылка на социальную сеть YouTube" title="Ютуб"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16">
+  <image id="youtube" width="20" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAAlElEQVQ4jb2UsQ2DMBBFPyki5CoSQzBPWIBBGCQVLRPAIgyREYIrXmTkSBTIEHTJqyyd/E7+Pp0AB7TAxHmm6HCKByvaLNgl5bLBByFGsoVLolZJGiR91zCR3S3WS+ABvI7kvCtcNS6ABniaCFfiK1AD49alVIbn+PuTLT/lDvTAfET04SeD7Q19Pgg7Q2Fnu77AvQF2jZhtlDlF0QAAAABJRU5ErkJggg=="/>
+</svg></a>
+        </li>
+      </ul>
+      </nav>
+      <div class=" developer developer-wrapper">
+        <p class="developer__text">Website by</p>
+         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="115" height="41" viewBox="0 0 115 41">
+  <image class="developer__academy-logo" id="logo_name" width="115" height="41" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHMAAAApCAYAAAAGVhZ3AAAKRklEQVR4nO2cD5QVVR3Hvyu7QLqoIbmwuBqgLkKwbFFBkpBISUDkSVQS449QaIZkLkrAUTFEBUkLo7MVoZ6QCBMXDyQWiqKlBrJhu1i5K7tA5MrKYgW4stu5vc+cvTt35u17+96j3Xzfc+bMzL137tyZ3/39ft/f7857GX3O+ajiQLaksyTlScqV1FPScUl72faxPxpPp2kkB5lWLx9BOD0RVk9rOxvhnRrjXd9GsGar9gm6muN3navSSAhGmDdJWiypY4wd1VuCMsLpZE2AHEkZkrqxFThXN+GwpC9I+oNT04RfSBoj6XpJq53acJgxNIbWth7X8a5WSJrb1qZeJtrmCfKfPpO5z9Ikb/uH00sTsiR1xxR7W66l6d55R+7b2emhOU6RdFocE+1eSVdI+rKknU5t4ujEeD6Ugr4Thm1ml0v6VoId1iP8aqemOXZJ+phTmjg+L+mclLypdoCTrCEeP4HDPZH3ioZTQuqynZJ2gJMSHGKvOExgIjD+d6WkOnxhGb7Uw5cwq/mc/5LzndSJOnN+p6TZkqpwK+9IuhkBLpN0EHJWhcluN8hs5UCNz5gvqUhShaQbJP3WaZU83MPE24NWXyCpRNIISc9L6uojW+dbx12tMRdQZ45rJO3Hhy+RNAvfvp86c/wo59vag0Bbo5lj0IxZCPQ1SU9LWgPJSQVqJX1OkgmKe0jayNiLuNcqGGwp54WcZ1BnozPcoAch1xrqzPnXLOL2FPeYkaJnSjriEaaZqY9LelLSDrTDsMfLJY2W9AlJ5YQ6rdX4MNwu6Vnqjkn6Acf9QtpHwwuQveNsj9D2zxwbM/4eplrtiVDFIswsNGA3M36cpK8Qvnj4Dex0qaRFkl6VNMzpqfX4l+/KY+xbM2n85OvfTosIUhGnphQtCXMYgrlL0g/RhCedVhGYF7yQNlX4socknem0TCMlCBOmSe39HIEckjRI0q1RZrGNSvzqeEnDJb0u6ZtR7pVM1Fvj/8DB/4I9h/86lH66pM/iT+JFCVr6Iyj/y5I+neIXXMnesN8ppAGnOa3+T2ELMx9yUIwgzPnPWvAdORb1D4LR5HmSBhLP/V7Sj6ME64niHu5ZiGV5UNJFHxRh2gTiUtioid22Oi2DYRjtWklz8I9hgjeaPkrSBEn3E9vFgsWEFjt8bU04dFmA2d8OEZvAs/1d0u+oq+Kat0P6qvOVbwlov47Ew161QZj1TEP7byOWG4ZAY8XJku4go2JWP2bGYJInozUZxI7POi3SaBVsM9sVDVjA6kAsyEEwhbTdSewZZEbPI4RZFUWD2zpOJ3FxRlscpy3MX2OSFrKqMcpp7eJsBPhVzPQMiEc5Jkqkzu7EnOUTp+5yemofmA3JWtAWR2sL0yxbjUUIJuW1mVRXD+eqJjwHY/w65tUkqfuigY+REjNCvEXSfZL6R4lT00iiMD2sh9gsIdNjyMuNIdmWXqw89CXRXsLqxmq0z6wv9pY0UtJ3AwhLGklEkDBF+mwOyYJSGOgrkob42mXxacej+EojvC9KeoZwxENLi9UtwfjmATDVlpbcciFyg0K+ZOiGhRgYwxcDJvnwqRjZ96m8n/4xcI5sYu5zfeVnUB4r22+GMGEKem8SB5dImsqKyIvEoV5sabR2MIMzmvgTBJwsTCMMOCDpT9zjIKs1fvTGNewjc/UqYcVU2o1lua4G018KgzcWqIOvLyPEX3Hfl+hzfUhmqSOJ/xri6Ne4bo6vXSPPsJC2hv3/lTGfhUK8Rbm5308ZV3dSpY1YQD82UzcpyHR6OIDJvIZ0nOnobrJClzHYVaz3VTArk73CYLSnCyb8AITrIgiViRsfpp154OeYcLUsyZkHHGqtc55LnngLfZ1JaHQz3zUtpV0XJkM+z7aFlz3eGV0kvFpL3R6OsyCEJoFxhJy2hwFs24mBR0M032BSvEi8a8qvpXwxqznm/NuSvmH1l4eymYTMumia+Ty+s4wHegAW9xm0ZSUput0MPhV4gJc+ikk1nIklWLMHE+v25CWZEOgqSRPR1uW0WYtmGf99NX16XxJMt/oqQpCbmADXIPQRCMfGJQjyDSbNHF74heSJFyBwD42smQ6G1XvPkslHaBfipm6l/Er2S61r7bBoMv2b8PBoNM28FH9xNY2XI7h52PXr0JAuzpXJQyX+42KEdcRaDutt3cWsqYpZW2uVN0j6G8f7EeZ4LMgxzJmIHT1cyYub7hPeVlzMjVbZWPbbrFjbQzVjzMOKiP0jVhsvO2U+U3nCKn+G/ensdxMFjCMxswghTqbejCuQoXow9vs7zMzrcewL0JapdHoFMzgaygNSZbFiJv4omh/Osny4P+1nYwJm2SNFjZbW2IQlBxO43+khsoJk4zSOJ1sv1o+TnZImvO+URPCeUxIhmJ42L7EI1Fa4S1QCtAM/+Uec7EpebAEz9uUAJ2/jCFo8CJseL3KwBmaMk2Ce5qV/3NdPvaWtQQRBZKRWIsgbOO/k024Ptdz7w06Ny3494W5iggdtFU4vrcM2CFYPrIdH7Iq93qIJU8zQiYQcg62E+cWYoYHOFRFsRJPvCpllsaA/bK6K8Ocoffm1Q5a5uj8gLMhGaNnExCuId+thxn6UcN9lvvdzQcD3QJvZD4JXrPJtDyfw/EHwSFoRluYgyZn/wjazfnpu42livLmo+xRM4Bjfzwv2kvJ6zOmhOaKZdw9vsu8Fi36B9dHZlOdyvAbzP4pJt4tvlToy5jqYYD0CNUtwGzBRs6z7FUGSFpEsmYIV2gibvTxg8m9CoN59zarKX7hPIS6mSMnDevofQI/F1ic0zQY3E1sclCQXmnEb2liLyt9O3XFmcr8WBNmHVF9/p8ZFhdX/LWjMYsjBE/jK7xOWmPhtNFp8HuZ/NmzzLQR6E+OcQV/LiAkf4h73MnFqYK4vIZB5+MNyi316aETwxZjgaUy8+YzHv9yWKBpIi3ootvszS2DnUzicsmoY2+Mt3HgSHVcwEUqdFk3ojEDmYgYb+AJhLqYvGvpgxhrx31VMwkJmZRn9CQEPxa/U4RYqrb7zcBeZhDGePyuADO3yffBVgAa/SfvOTJ7DPtYsSNgnYfeHeB811HXg3u/71kIz0foGi/EKq5Ib0F6ESVsgPiPsCu/3mRkIZ6n1AdZGyEKlwtEF8tEQ2iJigh60UlevENZsd1qm0RIyEOQIfOY6u71nZhuJf/riUxoJXsswM2G5xnejCDIXH/QUgjxEiDMkLci4UYACbECQpSxZNoPfob/DRUMITYxZ+R4Xj4xxBJn4q93MHjFR8mGSYcJPIxyFuKUxuMGrgt5jtJ/Bd0Cwi6xfTK8mkXDAaR3BUATm5UPL0cb0pyGJIY8fJtfBoAN5RjRheugO85vI+WFM7wqLLHQlsXwtdv0IqwP3Wd+yppFixPMHFSMhMt7P5nagdf2g9d0oLyF+2+P0kEZKEe+/jXRiyWh+wMLvHn5dtcG5Ko0Tgnh/MnAMH9qP0EWY0bspSwvyf4h4NdOPcazllTk1aZxYSPoP9apskcBoWO0AAAAASUVORK5CYII="/>
+  <a class="developer__link" href="https://htmlacademy.ru/intensive/htmlcss"></a></svg>
+       </div>
+      </div>
+  </footer>
 </body>
 
 </html>

@@ -22,7 +22,7 @@ body {
 
 body {
   min-width: 430px;
-  border: 2px dashed #c7e4ff;
+  outline: 2px dashed #c7e4ff;
 }
 
 html::before,
@@ -37,15 +37,24 @@ main,
 header,
 footer {
   /* background-color: #f3faff; */
-  border: 2px solid #7fc1ff;
+  outline: 2px solid #7fc1ff;
 }
 
 nav,
 section,
 article,
-aside {
+aside,
+div,
+ul, 
+a,
+input {
   /* background-color: #f9f7ff; */
-  border: 2px solid #9779ec;
+  outline: 2px solid #9779ec;
+}
+
+span,
+label {
+  outline: 2px solid #ee8dbe;
 }
 
 nav::before,
@@ -55,25 +64,41 @@ aside::before {
   color: #9779ec;
 }
 
-h1 {
+h1,
+h2,
+li {
   /* font-size: 18px; */
   /* background-color: #ffffff; */
-  border: 2px solid #ff994f;
+  outline: 2px dotted #ff994f;
 }
 
 h1::before {
-  content: "h1";
+  /* content: "h1"; */
   color: #ff994f;
 }
 
 p {
   /* background-color: #ffffff; */
-  border: 2px solid #f36dff;
+  outline: 2px solid #f36dff;
 }
 
 p::before {
   color: #f36dff;
-  content: "p";
+  /* content: "p"; */
+}
+
+ul::before {
+  color: blue;
+  /* content: "ul"; */
+  outline: 2px solid blue;
+
+}
+
+li::before {
+  color: green;
+  /* content: "li"; */
+  outline: 2px solid blue;
+
 }
 
 /* * {
@@ -98,37 +123,38 @@ p::before {
 } */
 
 html::before {
-  content: "html";
+  /* content: "html"; */
 }
 
 body::before {
-  content: "body";
+  /* content: "body"; */
 }
 
 main::before {
-  content: "main";
+  /* content: "main"; */
 }
 
 header::before {
-  content: "header";
+  /* content: "header"; */
 }
 
 footer::before {
-  content: "footer";
+  /* content: "footer"; */
 }
 
 section::before {
-  content: "section";
+  /* content: "section"; */
 }
 
 article::before {
-  content: "article";
+  /* content: "article"; */
 }
 
 aside::before {
-  content: "aside";
+  /* content: "aside"; */
 }
 
 nav::before {
-  content: "nav";
+  /* content: "nav"; */
 }
+
