@@ -1,120 +1,98 @@
-* {
-	box-sizing: border-box;
-}
 
 a {
-	text-decoration: none;
 	transition: all 0.3s;
-}
-
-
-
-ul {
-	 list-style: none;
-	 padding: 0;
-	 margin: 0;
-}
-
-.visually-hidden:not(:focus):not(:active),
-    input[type="checkbox"].visually-hidden,
-    input[type="radio"].visually-hidden {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        border: 0;
-        padding: 0;
-        white-space: nowrap;
-        -webkit-clip-path: inset(100%);
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
-        overflow: hidden;
 }
 
 body {
 	width: 100%;
-	max-width: 1280px;
-	margin: 0 auto;
+	font-size: 14px;
 	font-family: "PT Sans", sans-serif;
 	text-transform: uppercase;
 }
 
 .shadow-wrapper {
-	width: 1200px;
+	width: 100%;
+	max-width: 1200px;
 	margin: auto;
 	box-shadow: 0 0 5px 0 #34495e;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
 }
 
 .header {
 	width: 100%;
 	max-width: 1200px;
-	margin: 0;
 	padding: 0;
-
 }
 
 .page-header {
-	margin: 0 auto;
-	padding-bottom: 508px;
-    background-image: url('../img/sedona-welcome-background-image.png');
-    background-repeat: no-repeat;
-    background-position: top center;
+	/* margin: 0 auto; */
+	/* padding-bottom: 508px; */
+    /* background-image: url('../img/sedona-welcome-background-image.png'); */
+    /* background-repeat: no-repeat; */
+    /* background-position: top center; */
 
 }
 
 .page-header__navigation {
-	margin: 0 auto;
-	padding: 0;
-	background-color: #ffffff;
+	/* margin: 0 auto; */
+	/* padding: 0; */
+	/* background-color: #ffffff; */
 }
 
 .header-navigation {
 	width: 100%;
 	max-width: 1200px;
 	display: flex;
+	justify-content: space-between;
+	position: relative;
 }
 
 .header-navigation__list {
-	margin: 0 auto;
+	/* margin: 0 auto; */
 }
 
 .header-list {
 	display: flex;
 	justify-content: space-between;
-	width: 100%;
-	max-width: 1200px;
+	width: 43%;
+	/* max-width: 1200px; */
 }
 
 .header-navigation__item {
-	width: 100%;
-	max-width: 239px;
-	min-height: 56px;
+	width: 49%;
+	font-size: 1em;
 	text-align: center;
-	font-size: 14px;
-	line-height: 26px;
-	font-weight: bold;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	line-height: 3.5;
+	/* display: flex; */
+	/* justify-content: center; */
+	/* align-items: center; */
 }
 
-.header-navigation__link--logo {
+.header-navigation__logo {
+	/* position: absolute; */
+	/* top: 0; */
+	/* left: 50%; */
+	/* transform: translateX(-50%); */
+    /* background-image: url('../img/sedona-logo.png'); */
+    /* background-repeat: no-repeat; */
+    /* background-position: top center; */
+}
+
+.header__link--logo {
 	position: absolute;
-	top: 0;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 140px;
-	height: 70px;
-    /*height: 72px;*/
-    background-image: url('../img/sedona-logo.png');
-    background-repeat: no-repeat;
-    background-position: top center;
+    right: 0;
+    bottom: -40px;
+    left: 0;
+    width: 184px;
+    height: 95px;
+    margin: auto;
+	background-image: url("../img/sedona-logo.svg");
 }
-
 
 .header__link {
 	color: #000000;
+	font-weight: 700;
+	line-height: 1.625em;
 }
 
 .header__link:hover {
@@ -130,47 +108,85 @@ body {
 	color: #766357;
 }
 
+.sedona-welcome--wrapper {
+	width: 100%;
+	background: url("../img/sedona-main-bg.jpg") no-repeat center;
+	background-color: #000000;
+}
+
+.sedona-welcome--wrapper--indent {
+	padding-top: 75px;
+	/* padding-bottom: 90px; */
+}
+
+.sedona-welcome__text {
+	display: block;
+	min-height: 350px;
+	background: url("../img/welcome.svg") no-repeat center;
+}
+
+.sedona-welcome__text--indent {
+	margin-bottom: 10px;
+}
+
+.sedona-welcome--wrapper::after {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 60px;
+	background-color: #ffffff;
+	background: url("../img/polygon.svg") center no-repeat;
+	background-size: cover;
+
+}
+
 .page-main {
 	width: 100%;
 	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0;
+}
+
+.section {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .main-section {
-	margin: 0 auto;
-	padding: 0;
+	/* margin: 0 auto; */
+	/* padding: 0; */
 }
 
 .main-section-first {
 	width: 100%;
-	max-width: 1200px;
+	/* max-width: 1200px; */
 }
 
 .main-section__wrapper {
-	margin: 0 auto;
-	padding-top: 62px;
+	/* margin: 0 auto; */
+	padding-top: 4.357em;
+	padding-bottom: 4.214em;
 }
 
 .features {
-	width: 100%;
-	max-width: 1200px;
-	min-height: 216px;
+	width: 48%;
+	/* max-width: 1200px; */
+	/* min-height: 216px; */
 
 }
 
 .features__text {
-	margin: 0 auto;
+	/* margin: 0 auto; */
 	text-align: center;
-	font-size: 14px;
+	font-size: 1em;
 	line-height: 26px;
 	font-weight: 400;
 }
 
 .features__headline {
-	margin: 0 auto;
+	/* margin: 0 auto; */
 	text-align: center;
-	font-size: 21px;
+	font-size: 1.5em;
 	line-height: 26px;
 	font-weight: bold;
 
@@ -181,45 +197,40 @@ body {
 }
 
 .main-section-first {
-	margin: 0 auto;
-	 background-image: url("../img/sedona-american-flag.png");
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 800px 274px;
+	/* margin: 0 auto; */
+	 background: url("../img/sedona-american-flag.jpg") right no-repeat;
 }
 
 .feature {
 	width: 100%;
-	max-width: 1200px;
-	margin: 0;
-	display: flex;
+	/* margin: 0; */
+	/* display: flex; */
 	color: #ffffff;
 
 }
 
 .feature-wrapper {
 	background-color: #81b3d2;
-	width: 100%;
-	max-width: 400px;
-	min-height: 256px;
+	width: 33.3333%;
+	/* max-width: 400px; */
+	/* min-height: 256px; */
 	text-align: center;
-	margin: 0;
-	padding: 0;
-
+	/* margin: 0; */
+	padding: 3.552em;
 
 }
 
 .feature__headline {
 	margin: 0;
-	font-size: 21px;
+	font-size: 1.5em;
 	line-height: 21px;
 	font-weight: bold;
-	padding-top: 50px;
+	/* padding-top: 50px; */
 }
 
 .feature__number {
 	margin: 0;
-	font-size: 14px;
+	font-size: 1em;
 	line-height: 21px;
 	font-weight: 400;
 	margin-top: 21px;
@@ -227,83 +238,89 @@ body {
 
 .feature__text {
 	margin: 0;
-	font-size: 14px;
+	font-size: 1em;
 	line-height: 21px;
 	font-weight: 400;
 	margin-top: 21px;
-
 }
+
 
 .main-section-second {
 	width: 100%;
-	max-width: 1200px;
+	/* max-width: 1200px; */
+}
+
+.benefits-list__item--fourth {
+	width: 100%;
 }
 
 .benefits-list {
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
+
 .benefits-list__item {
-	width: 100%;
-	max-width: 400px;
-	min-height: 330px;
+	width: 33.3333%;
+	/* max-width: 400px; */
+	/* min-height: 330px; */
 	text-align: center;
 }
 
 .benefits-list__item--second {
-	padding-top: 162px;
-
+	padding-top: 11.571em;
+	padding-bottom: 6.285em;
 }
 
 .benefits-list__item--house {
- 	background-image: url('../img/house-icon.png');
+ 	background-image: url('../img/house-icon.svg');
     background-repeat: no-repeat;
     background-position: top 60px center;
 
 }
 
 .benefits-list__item--burger {
-	background-image: url('../img/burger-icon.png');
+	background-image: url('../img/burger-icon.svg');
     background-repeat: no-repeat;
     background-position: top 60px center;
 }
 
 
 .benefits-list__item--gift {
-	background-image: url('../img/gift-icon.png');
+	background-image: url('../img/gift-icon.svg');
     background-repeat: no-repeat;
     background-position: top 57px center;
 }
 
 .benefits-list__title {
-	font-size: 21px;
+	font-size: 1.5em;
 	line-height: 21px;
 	font-weight: bold;
-	margin: 0;
+	/* margin: 0; */
 }
 
 .benefits-list__text {
-	margin: 0;
-	font-size: 14px;
+	/* margin: 0; */
+	font-size: 1em;
 	line-height: 21px;
 	font-weight: 400;
 	margin-top: 23px;
 }
 
 .main-section-third {
-	margin: 0 auto;
+	/* margin: 0 auto; */
 	display: flex;
 	flex-direction: row-reverse;
-	background-image: url("../img/devil-bridge.png");
+	background-image: url("../img/devil-bridge.jpg");
     background-repeat: no-repeat;
     background-position: left;
-    background-size: 800px 274px;
+    background-size: cover;/* 800px 274px */
 }
 
 .benefits-list__title--indent {
-	margin-top: 48px;
+	/* margin-top: 48px; */
 }
 
 .benefits-list__number--indent {
@@ -312,17 +329,23 @@ body {
 }
 
 .benefits-list__item--fourth {
-	min-height: 256px;
+	/* min-height: 256px; */
+	padding-top: 3.571em;
+	padding-bottom: 4.642em;
 	background-color: #eeeeee;
 }
 
+.main-section-fourth {
+	width: 100%;
+}
+
 .main-section-fifth {
-	margin: 0 auto;
+	/* margin: 0 auto; */
 }
 
 .booking {
 	width: 100%;
-	max-width: 1200px;
+	/* max-width: 1200px; */
 }
 
 .booking-wrapper {
@@ -330,19 +353,19 @@ body {
 }
 
 .booking__headline {
-	font-size: 30px;
+	font-size: 2.142em;
 	line-height: 36px;
 	font-weight: bold;
-	margin: 0;
+	/* margin: 0; */
 	margin-top: 52px;
 
 }
 
 .booking__text {
-	font-size: 14px;
+	font-size: 1em;
 	line-height: 24px;
 	font-weight: 400;
-    margin: 0;
+    /* margin: 0; */
     margin-top: 23px;
 }
 
@@ -368,7 +391,7 @@ body {
 
 .booking__link {
 	color: #ffffff;
-	font-size: 21px;
+	font-size: 1.5em;
 	line-height: 26px;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -376,12 +399,12 @@ body {
 }
 
 .page-footer {
-	margin: 0 auto;
-	min-height: 593px;
- background-image: url('../img/sedona-map.png');
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    background-size: 1200px 593px;
+	/* margin: 0 auto; */
+	/* min-height: 593px; */
+ /* background-image: url('../img/sedona-map.png'); */
+    /* background-repeat: no-repeat; */
+    /* background-position: bottom center; */
+    /* background-size: 1200px 593px; */
 }
 
 .footer {
@@ -407,7 +430,7 @@ body {
 .footer__hashtag {
 	margin: 0;
 	text-align: center;
-	font-size: 21px;
+	font-size: 1.5em;
 	line-height: 26px;
 	font-weight: bold;
 }
@@ -464,21 +487,29 @@ body {
 }
 
 .developer__text {
-	font-size: 14px;
+	font-size: 1em;
 	line-height: 26px;
 	font-weight: 400;
 	margin-right: 10px;
 }
 
 .developer__link {
-	margin-top: 7px;
+	display: block;
+	/* margin-top: 7px; */
+	height: 41px;
+	width: 115px;
 
+}
+
+.developer__link-svg:hover {
+	/* stroke: #90bcd7; */
+	fill: #90bcd7;
 }
 
 /* почему не меняется заливка цветом? */
-.developer__academy-logo:hover {
-	fill: #81b3d2;
-}
+/* .developer__academy-logo:hover { */
+	/* fill: #81b3d2; */
+/* } */
 
 
 .footer__text {
@@ -524,7 +555,7 @@ body {
 }
 
 .modal__label {
-	font-size: 14px;
+	font-size: 1em;
 	line-height: 26px;
 	font-weight: bold;
 }
@@ -539,7 +570,7 @@ body {
 .modal__form input[type="number"] {
     border: none;
     background-color: #f2f2f2;  
-    font-size: 14px;
+    font-size: 1em;
 	line-height: 26px;
 	font-weight: bold; 
 }
@@ -625,7 +656,7 @@ body {
 }
 
 .modal__button {
-	font-size: 21px;
+	font-size: 1.5em;
 	line-height: 26px;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -695,7 +726,7 @@ body {
 .form__list {
 	display: flex;
 	flex-direction: column;
-	font-size: 14px;
+	font-size: 1em;
 	line-height: 21px;
 	font-weight: 400;
 }
@@ -708,7 +739,7 @@ body {
 }
 
 .form__legend {
-	font-size: 16px;
+	font-size: 1.142em;
 	line-height: 21px;
 	font-weight: bold;
 }
@@ -723,7 +754,7 @@ body {
 }
 
 .form__input {
-	font-size: 14px;
+	font-size: 1em;
 	line-height: 21px;
 	font-weight: 400;
 }
@@ -837,7 +868,7 @@ input[type="radio"]:checked + label:after {
 	margin-bottom: 9px;
   
 	font-weight: 600;
-	font-size: 16px;
+	font-size: 1.142em;
 	line-height: 21px;
   }
   
@@ -869,7 +900,7 @@ input[type="radio"]:checked + label:after {
   .price-controls label {
 	display: inline-block;
   
-	font-size: 14px;
+	font-size: 1em;
 	outline: 1px solid red;
 	line-height: 30px;
 	vertical-align: top;
@@ -945,7 +976,7 @@ input[type="radio"]:checked + label:after {
 	margin: 0 auto;
 	padding: 6px 35px;
   
-	font-size: 14px;
+	font-size: 1em;
 	line-height: 20px;
 	color: #ffffff;
 	text-transform: uppercase;
@@ -992,7 +1023,7 @@ input[type="radio"]:checked + label:after {
 .sort-types {
 	display: flex;
 	align-items: center;
-	font-size: 12px;
+	font-size: 0.857em;
 	line-height: 18px;
 	font-weight: 400;
 }
@@ -1010,7 +1041,7 @@ input[type="radio"]:checked + label:after {
 }
 
 .sort__found {
- 	font-size: 21px;
+ 	font-size: 1.5em;
  	line-height: 26px;
  	font-weight: bold;
 }
@@ -1101,7 +1132,7 @@ input[type="radio"]:checked + label:after {
 }
 
 .booking-hotels__title {
-	font-size: 21px;
+	font-size: 1.5em;
 	line-height: 20px;
 	font-weight: bold;
 	margin: 0;
@@ -1134,7 +1165,7 @@ input[type="radio"]:checked + label:after {
 
 .booking-hotels__price {
 	margin: 0;
-	font-size: 14px;
+	font-size: 1em;
 	line-height: 14px;
 	font-weight: 400;
 	color: #333333;
@@ -1144,7 +1175,7 @@ input[type="radio"]:checked + label:after {
 
 .booking-hotels__button {
 	border: none;
-	font-size: 14px;
+	font-size: 1em;
 	line-height: 21px;
 	font-weight: bold;
 	color: #ffffff;
@@ -1206,7 +1237,7 @@ input[type="radio"]:checked + label:after {
 .booking-hotels__rate {
 	display: inline-block;
 	margin: 0;
-	font-size: 14px;
+	font-size: 1em;
 	line-height: 27px;
 	font-weight: 400;
 	width: 100%;

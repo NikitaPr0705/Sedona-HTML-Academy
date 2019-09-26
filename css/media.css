@@ -1,0 +1,35 @@
+@media (max-width: 1125px) {
+    .main-section-first,
+    .main-section-third {
+        background-size: cover;
+    }
+}
+
+@media (max-width: 860px) {
+    .benefits-list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .benefits-list__item {
+        width: 100%;
+        text-align: center;
+        /* padding-left: 10%; */
+    }
+
+    .benefits-list__text br {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .footer-wrapper {
+        flex-direction: column;
+        padding: 2% 1%;
+    }
+
+    .footer-navigation {
+        margin: 2% 0;
+    }
+}

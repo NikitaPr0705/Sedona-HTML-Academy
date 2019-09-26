@@ -6,6 +6,10 @@ a {
 	text-decoration: none;
 }
 
+body {
+	margin: 0;
+}
+
 ul {
 	list-style: none;
 	padding: 0;
@@ -36,3 +40,11 @@ p {
 	/*letter-spacing: 0.5px;*/
 	/* hyphens: auto; */
 }
+
+svg path,
+svg rect {
+	fill:inherit;
+	stroke:inherit;
+	stroke-width:inherit;
+	
+	}
