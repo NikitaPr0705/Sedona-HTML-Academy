@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Форма отзыва</title>
+    <!-- Import main styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+<![endif]-->
+    <!--[if lt IE 10]>
+<link rel="stylesheet" href="assets/css/ie.css">
+<![endif]-->
+</head>
+
+<body>
+    <div class="container wrapper">
+        <div id="mobile-indicator"></div>
+        <div id="large-display-indicator"></div>
+
+        <nav class="navbar clearfix">
+            <ul class="menu-left">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">ФОТО И ВИДЕО</a></li>
+            </ul>
+            <ul class="menu-right">
+                <li class="active"><a href="#">Форма отзыва</a></li>
+                <li><a href="#">HTML Academy</a></li>
+            </ul>
+
+            <a href="#" class="logo"></a>
+
+            <button type="button" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+            <button type="button" class="close-menu-button">&#10060;</button>
+        </nav>
+
+        <div class="container top"><span class="text-intro-sedona"></span></div>
+
+        <div class="container feedback">
+            <div class="heading">
+                <h1 class="thicker">Оставьте свой отзыв</h1>
+                <p>Помогите нашим отелям стать лучше! оставьте отзыв о них,<br> а также о посещенных вами достопримечательностях</p>
+            </div>
+
+            <form id='feedback' action="">
+                <div class="row row-1">
+                    <div class="col-lg-5 col-sm-6 overall-impression">
+                        <div>
+                            <span class='thick'>ВАше Общее впечатление:</span>
+                        </div>
+                        <div class="wrapper"><input name='impression' id='positive' type="radio"><label for="positive">Скорее положительное</label></div>
+                        <div class="wrapper"><input name='impression' id='negative' type="radio"><label for="negative">Скорее отрицательное</label></div>
+                        <div class="wrapper"><input name='impression' id='x3' type="radio"><label for="x3">Затрудняюсь ответить</label></div>
+                    </div>
+                    <div class="col-lg-5 col-lg-push-2 col-sm-6 fio">
+                        <div>
+                            <span class='thick'>Представьтесь, пожалуйста:</span>
+                        </div>
+                        <div class='wrapper'><label for="name">Имя:</label><input id='name' type="text" placeholder="Петя"></div>
+                        <div class='wrapper'><label for="last-name">Фамилия:</label><input id='last-name' type="text" placeholder="Вася"></div>
+                        <div class='wrapper'><label for="third-name">Отчество:</label><input id='third-name' type="text" placeholder="Эдуардо"></div>
+                    </div>
+                </div>
+                <div class="row row-2">
+                    <div class="col-lg-12 col-sm-12 contact-info">
+                        <div class="text-stripes">
+                            <div>
+                                <span class="thick">Контактная информация</span>
+                            </div>
+                        </div>
+                        <div class="phone-number">
+                            <div class="wrapper">
+                                <label for="phone-number">Телефон:</label><input id='phone-number' type="tel" placeholder="+XXXXXXXXXX"><span></span>
+                            </div>
+                            <p class='warning'>Ошибка, перепроверьте номер</p>
+                        </div>
+                        <div class="email">
+                            <div class="wrapper">
+                                <label for="e-mail">Электронная&nbsp;почта:</label><input id='e-mail' type="email" placeholder="Введите e-mail"><span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-3">
+                    <div class="col-lg-12  col-sm-12 sights-visited">
+                        <div class="text-stripes">
+                            <div>
+                                <span class="thick">посещенные<br>достопримечательности:</span>
+                            </div>
+                        </div>
+                        <div class='check-group'>
+                            <input id='bridge' type="checkbox"><label for="bridge">Мост Дьявола</label>
+                            <input id='mountain' type="checkbox"><label for="mountain">Гора-Колокол</label>
+                        </div>
+                        <div class='check-group'>
+                            <input id='park' type="checkbox"><label for="park">Слайд-парк</label>
+                            <input id='rocks' type="checkbox"><label for="rocks">Красные скалы</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-4">
+                    <div class="col-lg-12 col-sm-12 emotions">
+                        <div class="text-stripes">
+                            <div>
+                                <span class="thick">Опишите свои эмоции:</span>
+                            </div>
+                        </div>
+                        <textarea placeholder="Опишите подробно все свои восторги"></textarea>
+                    </div>
+
+                </div>
+                <div class="row submit">
+                    <div class="col-lg-12 col-sm-12">
+                        <input class='btn' type="submit" id='form-submit' value='Отправить отзыв'>
+                        <p>* — обязательные поля</p>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+
+        <footer class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-4 hashtag"><a href="#">#visitSEDONA</a></div>
+                <div class="col-lg-4 col-sm-4 socbuttons">
+                    <a class='twitter' href="#"></a>
+                    <a class='fb' href="#"></a>
+                    <a class='youtube' href="#"></a>
+                </div>
+                <div class="col-lg-4 col-sm-4 developed-by"><a href="#">Разработано 
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.95 34.09"><title>htmlacademy-logo</title><g id="Слой_2" data-name="Слой 2"><g id="Layer_1" data-name="Layer 1"><path d="M13.62,0l-.15,0L0,1.41V26.07l13.47,8,13.43-8,0,0V1.41ZM25,12.13,13.5,5.33v-.1l-.09,0-.09-.06v.11L1.92,12.12v-9L13.47,1.93,25,3.15v9ZM13.41,6.79,24.92,13.5l-4.48,2.64-7.09-4.22v1.42l5.9,3.51-.86.51-5-3v1.41l3.83,2.27-.78.52-3-1.79V18.2l1.85,1.09-1.8,1.08L2,13.62ZM1.92,15.13l11.41,6.79,0,1L5.41,18.23v1.42l8,4.79,0,1.08-8-4.74V22.2l8,4.82,0,0,8.14-4.87V17L25,15V25L13.47,31.85,1.92,25Z"/></g></g></svg>
+                </a></div>
+            </div>
+        </footer>
+    </div>
+
+    <!--Import jQuery-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+    <!--[if lt IE 9]>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="assets/ie8-support/jquery.placeholder.min.js"></script>
+<script>
+$(document).ready(function () {
+    $('input, textarea').placeholder();
+});
+</script>
+<![endif]-->
+
+    <!-- Site Sripts -->
+    <script src="assets/js/all.js"></script>
+
+</body>
+
+</html>

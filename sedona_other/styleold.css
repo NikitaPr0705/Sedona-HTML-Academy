@@ -1,0 +1,469 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
+    background-color: #ffffff;
+    text-transform: uppercase;
+    min-width: 1280px;
+}
+
+ .visually-hidden:not(:focus):not(:active),
+    input[type="checkbox"].visually-hidden,
+    input[type="radio"].visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        -webkit-clip-path: inset(100%);
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+} 
+
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.button {
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.header {
+    font-weight: bold;
+}
+
+.header-navigation {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.navigation-list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.header ul {
+    list-style: none;
+}
+
+.header a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+
+.navigation-list__item {
+    width: 239px;
+    height: 56px;
+    text-align: center;
+    display: flex;
+}
+
+.navigation-list__item a {
+    margin: auto;
+}
+
+.navigation-list__item-logo {
+    width: 244px;
+    height: 72px;
+    background-image: url('../img/sedona-logo.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+
+
+.main-wrapper {
+    width: 1200px;
+
+    margin: 0 auto;
+    padding-top: 593px;
+    background-image: url('../img/sedona-welcome-background-image.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.main-text-wrapper {
+    width: 495px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.main-text-wrapper h1 {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.main-text-wrapper p {
+    font-weight: 400;
+
+}
+
+.main__title {
+    margin: 0;
+    margin-bottom: 38px;
+}
+
+.main-text--advantages {
+    margin: 0;
+    margin-bottom: 58px;
+}
+
+.main-block h2 {
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: bold;
+}
+
+.main-block p {
+    line-height: 21px;
+}
+
+.main-text-wrapper {
+    text-align: center;
+}
+
+.features-wrapper {
+    width: 400px;
+    text-align: center;
+    background-color: #81b3d2;
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+    padding-top: 48px;
+    padding-bottom: 64px;
+}
+
+.true-town {
+    display: flex;
+    background-image: url("../img/sedona-american-flag.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 800px 274px;
+}
+
+.devil-bridge {
+    display: flex;
+    flex-direction: row-reverse;
+    background-image: url("../img/devil-bridge.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 800px 274px;
+}
+
+.features-wrapper__title,
+.features-wrapper__text {
+    margin: 0;
+    padding: 0;
+}
+
+.title-one {
+    margin-bottom: 29px;
+}
+
+.number-one {
+    margin-bottom: 30px;
+}
+
+.title-two {
+    margin-bottom: 29px;
+
+}
+
+.number-two {
+    margin-bottom: 30px;
+
+}
+
+.benefits {
+    margin: 0 auto;
+}
+
+.benefits-one {
+    padding-top: 60px;
+    padding-bottom: 86px;
+}
+
+.benefits-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.benefits-list__item {
+    width: 400px;
+    text-align: center;
+}
+
+.benefits-list__title,
+.benefits-list__text,
+.benefits-list__number {
+    margin: 0;
+    /* margin-bottom: 29px; */
+}
+
+.benefits__title-one {
+    margin-top: 101px;
+    margin-bottom: 30px;
+}
+
+.list-one__item:nth-child(1) {
+    background-image: url('../img/house-icon.svg');
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.list-one__item:nth-child(2) {
+    background-image: url('../img/burger-icon.svg');
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.list-one__item:nth-child(3) {
+    background-image: url('../img/gift-icon.svg');
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+
+.benefits-two {
+    padding-top: 50px;
+    padding-bottom: 64px;
+    background-color: #eeeeee;
+}
+
+.benefits__title-two {
+    margin-bottom: 30px;
+
+}
+
+.benefits-list__number {
+    margin-bottom: 30px;
+}
+
+.booking {
+    width: 1200px;
+    padding-top: 57px;
+}
+
+.booking-wrapper {
+    width: 576px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.booking-headline__text {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: bold;
+}
+
+.booking-headline__text--position,
+.booking__search--position {
+    margin: 0;
+}
+
+.booking-headline__text--position {
+    margin-bottom: 37px;
+}
+
+
+.booking__search {
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.booking__search--position {
+    margin-bottom: 52px;
+
+}
+
+.button {
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+    margin: 0;
+}
+
+.search-button {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 35px 140px;
+    background-color: #766357;
+}
+
+.modal__order form {
+    font-weight: bold;
+}
+
+.button-form {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 18px 196px;
+    background-color: #81b3d2;
+    border: none;
+}
+
+input::placeholder {
+    font-weight: bold;
+    color: #000000;
+}
+
+.footer {
+    background-image: url('../img/sedona-map.png');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 1200px 593px;
+    padding-top: 472px;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.footer-main__wrapper {
+
+    margin: 0 auto;
+    display: flex;
+    padding: 0;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: rgba(255, 255, 255, .9);
+}
+
+.footer-item__wrapper {
+    width: 400px;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-hashtag {
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+.footer-links__wrapper {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+
+}
+
+.links-help__wrapper {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-link__item {
+    width: 46px;
+    height: 48px;
+}
+
+.twitter {
+    background-color: #81b3d2;
+    background-image: url('../img/twitter.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.facebook {
+    background-color: #81b3d2;
+    background-image: url('../img/facebook.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.youtube {
+    background-color: #81b3d2;
+    background-image: url('../img/youtube.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.footer-developer__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-developer__wrapper p,
+.footer-developer__wrapper a {
+    margin: 0;
+}
+
+
+.footer-developer__link {
+    background-image: url('../img/html-academy-logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 115px;
+    height: 41px;
+}
+
+.modal {
+    display: none;
+    box-sizing: border-box;
+    width: 568px;
+    max-width: 100%;
+    height: 395px;
+    max-height: 100%;
+    outline: 1px solid red;
+    margin: 0 auto;
+    padding: 55px;
+    position: absolute;
+    background-color: #ffffff;
+    top: 0;
+    right: 315px;
+}
+
+.modal__order {
+    width: 458px;
+    outline: 1px solid green;
+}
+
+.modal__form input[type="text"],
+.modal__form input[type="number"] {
+    border: none;
+    background-color: #f2f2f2;   
+}
+
+.modal__form input[type="text"] {
+    width: 346px;
+    height: 38px;
+    
+}
+
+.modal__form input[type="number"] {
+    width: 114px;
+    height: 38px;
+}

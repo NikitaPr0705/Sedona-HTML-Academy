@@ -1,0 +1,50 @@
+/**
+ * Выделить все элементы с атрибутом class.
+ */
+[class] {
+  outline: 5px solid lightgrey;
+}
+
+/**
+ * Выделить все БЭМ-элементы.
+ */
+[class*="__"] {
+  outline: 5px solid grey;
+}
+
+/**
+ * Выделить все элементы с БЭМ-модификаторами.
+ */
+[class*="--"] {
+  outline: 5px solid darkgrey;
+}
+
+/**
+ * Выделить все элементы объектов
+ */
+[class^="o-"],
+[class*=" o-"] {
+  outline: 5px solid orange;
+}
+
+/**
+ * Выделить все элементы компонентов
+ */
+[class^="c-"],
+[class*=" c-"] {
+  outline: 5px solid cyan;
+}
+
+/**
+ * Выделить все элементы с адаптивными суффиксами.
+ */
+[class*="@"] {
+  outline: 5px solid rosybrown;
+}
+
+/**
+ * Выделить все элементы с классами-хаками.
+ */
+[class^="_"] {
+  outline: 5px solid red;
+}
